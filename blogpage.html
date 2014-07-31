@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+	<form class="button-link" action="http://localhost:8080/blog/newpost">
+		<input type="submit" value="Newpost">
+	</form><br><br>
+
+  {% for p in posts %}
+    {{ p.render() | safe }}
+    <br>
+  {% endfor %}
+
+{% endblock %}

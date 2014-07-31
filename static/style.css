@@ -1,0 +1,36 @@
+body {
+  		font-family: Verdana, Helvetica, sans-serif;
+  		background-color: #FFFF66;
+  		padding-left: 0px;	
+}
+
+a {
+	font: bold italic 3em/1em "Times New Roman", "MS Serif", "New York", serif;
+	background: #228b22;
+	background-size: cover; 
+	text-align: center;
+	padding-left: 0px;
+	margin: 0px;
+	border: solid #e7ce00 0.25em;
+	border-radius: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: #e7ce00;
+}
+form.fields {
+	padding-left: 40px;
+	text-align: left;
+
+}
+div.art {
+	padding-left: 40px;
+}
+div.inputtitle {
+	padding-left: ;
+}
+div.content {
+	text-align: center;
+}
+.error {
+    color: red;
+}
