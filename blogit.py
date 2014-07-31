@@ -71,11 +71,12 @@ class Newpost(Bloghandler):
 			
 class DeletePost(Bloghandler):
 	def post(self):
-		self.key = self.request.get('id')
-		self.result = str(self.key)
-		db.delete(self.result)
+		identity = self.request.get('id')
+		key = db.Key.from_path('Post',int(identity))
+		post = db.get(key)
+		db.delete(post)
+		time.sleep(0.5)
 		self.redirect('/blog')
-			
 
 ### class to display all posts
 
